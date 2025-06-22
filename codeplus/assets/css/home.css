@@ -1,0 +1,213 @@
+.about{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about img{
+  border-radius: 25vh;
+  width: 35%;
+  height: 35vh;
+}
+
+.about h1{
+  color: white;
+}
+
+.about h1 span{
+  color: aquamarine;
+}
+
+main{
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+}
+
+main .cards{
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  display: grid;
+  grid-template-areas: 
+  "s s s s s s s a a a a a"
+  "s s s s s s s a a a a a"
+  "s s s s s s s a a a a a"
+  "s s s s s s s a a a a a"
+  "l l l l l l l v v v v v"
+  "l l l l l l l v v v v v"
+  "l l l l l l l v v v v v"
+  "l l l l l l l v v v v v"
+  ;
+}
+
+.skills{
+  padding: 10px;
+  text-wrap-mode: wrap;
+  grid-area: s;
+  background-color: #f0f0f0;
+}
+
+.skill{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #000;
+  color: #fff;
+  transition: .3s;
+}
+
+.skill:hover{
+  background-color: #fff;
+  color: black;
+}
+
+.about-me{
+  padding: 10px;
+  text-wrap-mode: wrap;
+  grid-area: a;
+  background-color: #fff;
+}
+
+.about-me p{
+  text-align: justify;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.posts{
+  padding: 10px;
+  text-wrap-mode: wrap;
+  grid-area: l;
+  background-color: #ffffff;
+}
+
+.post{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.post .title{
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.post p{
+  padding: 10px;
+}
+
+.videos{
+  padding: 10px;
+  text-wrap-mode: wrap;
+  grid-area: v;
+  background-color: #f0f0f0;
+}
+
+.h_iframe-aparat_embed_frame{
+  position: relative;
+}
+
+.h_iframe-aparat_embed_frame .ratio{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.h_iframe-aparat_embed_frame iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px solid #999;
+}
+
+.card-title{
+  display: block;
+  font-weight: bolder;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.call-us{
+  width: 100%;
+  height: auto;
+}
+
+.call-us h1{
+  margin-top: 20px;
+  margin-right: 9%;
+  color: white;
+}
+
+.call-us form{
+  padding: 10px 0px;
+}
+
+.call-us input:not([type='submit']),textarea{
+  width: 80%;
+  margin: 10px 10%;
+  padding: 10px;
+  border: 1px solid #99999980;
+  outline: none;
+  border-radius: 5px;
+  background-color: #ffffff10;
+  color: white;
+}
+
+.call-us input:not([type='submit']):focus,textarea:focus{
+  outline: 3px solid #ffffff42;
+  box-shadow: 0px 1px 6px 0px #ffffff42;
+}
+
+.call-us textarea{
+  resize: none;
+  height: 20vh;
+  overflow-y: auto;
+}
+
+.call-us input[type='submit']{
+  margin-right: 10%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0, 68, 255);
+  cursor: pointer;
+}
+
+.call-us input[type='submit']:hover{
+  background-color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    width: 50%;
+    height: 50%;
+  }
+  main .cards{
+    grid-template-areas: 
+    "s s s s s s s s s s s s"
+    "s s s s s s s s s s s s"
+    "a a a a a a a a a a a a"
+    "a a a a a a a a a a a a"
+    "l l l l l l l l l l l l"
+    "l l l l l l l l l l l l"
+    "v v v v v v v v v v v v"
+    !important
+    ;
+  }
+}
